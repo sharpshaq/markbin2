@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import { Template } from "meteor/templating";
+import { Blaze } from "meteor/blaze"; 
 
 class Accounts extends Component {
   componentDidMount() {
@@ -9,7 +12,7 @@ class Accounts extends Component {
 
   componentWillUnmount() {
     // Go find the forms we created and destroy them
-    //
+    // We need to clean up those forms ourselves
   }
 
   render() {
